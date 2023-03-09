@@ -1,0 +1,14 @@
+[
+    {
+        "model": "passportapi.itinerary_category",
+        "pk": 1,
+        "fields": {
+            "name": "Spring Break Trip",
+            "city": "Key West",
+            "state_or_country": "Florida",
+            "departure_date": "2018-3-16",
+            "return_date": "2018-03-18",
+            "user": 1
+        }
+    }
+]
