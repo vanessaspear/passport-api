@@ -1,6 +1,7 @@
 from django.db import models
 
 class Itinerary(models.Model):
+    
     name = models.CharField(max_length=50)
     itinerary_description = models.CharField()
     date = models.DateField(auto_now=False, auto_now_add=False)
