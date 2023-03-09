@@ -1,0 +1,186 @@
+[
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 1,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 1
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 2,
+        "fields": {
+            "itinerary_category": 9,
+            "itinerary": 2
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 3,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 3
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 4,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 4
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 5,
+        "fields": {
+            "itinerary_category": 3,
+            "itinerary": 5
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 6,
+        "fields": {
+            "itinerary_category": 5,
+            "itinerary": 5
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 7,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 6
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 8,
+        "fields": {
+            "itinerary_category": 9,
+            "itinerary": 7
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 9,
+        "fields": {
+            "itinerary_category": 9,
+            "itinerary": 8
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 10,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 9
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 11,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 10
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 12,
+        "fields": {
+            "itinerary_category": 3,
+            "itinerary": 11
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 13,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 12
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 14,
+        "fields": {
+            "itinerary_category": 6,
+            "itinerary": 13
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 15,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 14
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 16,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 15
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 17,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 16
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 18,
+        "fields": {
+            "itinerary_category": 6,
+            "itinerary": 17
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 19,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 18
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 20,
+        "fields": {
+            "itinerary_category": 1,
+            "itinerary": 19
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": 21,
+        "fields": {
+            "itinerary_category": ,
+            "itinerary":
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": ,
+        "fields": {
+            "itinerary_category": ,
+            "itinerary":
+        }
+    },
+    {
+        "model": "passportapi.itinerary_purpose",
+        "pk": ,
+        "fields": {
+            "itinerary_category": ,
+            "itinerary":
+        }
+    }
+]

@@ -54,5 +54,12 @@
         "fields": {
             "itinerary_category": "Milestone Celebration"
         }
+    }, 
+    {
+        "model": "passportapi.itinerary_category",
+        "pk": 9,
+        "fields": {
+            "itinerary_category": "Relaxation"
+        }
     }
 ]
