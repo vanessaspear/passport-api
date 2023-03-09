@@ -1,0 +1,13 @@
+[
+    {
+        "model": "passportapi.trip",
+        "pk": 1,
+        "fields": {
+            "name": "Christmas Vacation",
+            "city": "Melbourne",
+            "state_or_country": "Florida",
+            "departure_date": "2021-12-16",
+            "return_date": "2022-01-02"
+        }
+    }
+]
