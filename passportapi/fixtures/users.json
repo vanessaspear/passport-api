@@ -1,0 +1,50 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$cK4nlKiHnAvicY4AbcURS6$JWanvidq9mu9yxJFn48JTjiEj59wAdVE0xvLtTCAhzs=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "travel4fun",
+            "first_name": "Daisy",
+            "last_name": "Garcia",
+            "email": "dgarcia@travel.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2018-02-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$cK4nlKiHnAvicY4AbcURS6$JWanvidq9mu9yxJFn48JTjiEj59wAdVE0xvLtTCAhzs=zo=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "globetrotter7",
+            "first_name": "Joseph",
+            "last_name": "Jones",
+            "email": "jjones@travel.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2016-06-22T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$cK4nlKiHnAvicY4AbcURS6$JWanvidq9mu9yxJFn48JTjiEj59wAdVE0xvLtTCAhzs=5u5Xnc/4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "msheffield",
+            "first_name": "McKenzie",
+            "last_name": "Sheffield",
+            "email": "thorin@oakenshield.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-13T00:00:00Z"
+        }
+    }
+]
