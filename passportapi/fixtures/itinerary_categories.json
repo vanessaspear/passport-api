@@ -3,7 +3,7 @@
         "model": "passportapi.itinerary_category",
         "pk": 1,
         "fields": {
-            "itinerary_category": "Food"
+            "itinerary_category": "Food/Drinks"
         }
     },
     {
@@ -52,7 +52,7 @@
         "model": "passportapi.itinerary_category",
         "pk": 8,
         "fields": {
-            "itinerary_category": "Milestone Celebration"
+            "itinerary_category": "Milestone/Celebration"
         }
     }, 
     {
@@ -61,5 +61,20 @@
         "fields": {
             "itinerary_category": "Relaxation"
         }
+    },
+    {
+        "model": "passportapi.itinerary_category",
+        "pk": 10,
+        "fields": {
+            "itinerary_category": "Night Out"
+        }
+    },
+    {
+        "model": "passportapi.itinerary_category",
+        "pk": 11,
+        "fields": {
+            "itinerary_category": "Exploring"
+        }
     }
+
 ]

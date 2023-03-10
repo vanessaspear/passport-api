@@ -1,0 +1,98 @@
+[
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 1,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 1
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 2,
+        "fields": {
+            "travel_reason": 4,
+            "trip": 2
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 3,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 2
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 4,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 3
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 5,
+        "fields": {
+            "travel_reason": 2,
+            "trip": 3
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 6,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 4
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 7,
+        "fields": {
+            "travel_reason": 2,
+            "trip": 5
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 8,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 6
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 9,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 7
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 10,
+        "fields": {
+            "travel_reason": 3,
+            "trip": 7
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 11,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 8
+        }
+    },
+    {
+        "model": "passportapi.trip_reason",
+        "pk": 12,
+        "fields": {
+            "travel_reason": 1,
+            "trip": 9
+        }
+    }
+]
