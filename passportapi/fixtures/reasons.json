@@ -1,0 +1,37 @@
+[
+    {
+        "model": "passportapi.reason",
+        "pk": 1,
+        "fields": {
+            "reason": "Vacation"
+        }
+    },
+    {
+        "model": "passportapi.reason",
+        "pk": 2,
+        "fields": {
+            "reason": "Family / Friend Visit"
+        }
+    },
+    {
+        "model": "passportapi.reason",
+        "pk": 3,
+        "fields": {
+            "reason": "Milestone"
+        }
+    },
+    {
+        "model": "passportapi.reason",
+        "pk": 4,
+        "fields": {
+            "reason": "Holiday"
+        }
+    },
+    {
+        "model": "passportapi.reason",
+        "pk": 5,
+        "fields": {
+            "reason": "Business"
+        }
+    }
+]

@@ -18,9 +18,14 @@ from django.conf.urls import include
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-from passportapi.views import register_user, login_user
+from rest_framework import routers
+from passportapi.views import register_user, login_user, TripView
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'trips', TripView, 'trip')
 
 urlpatterns = [
+    path('', include(router.urls)),
     path('register', register_user),
     path('login', login_user),
     path('admin/', admin.site.urls),
