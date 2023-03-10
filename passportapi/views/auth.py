@@ -28,7 +28,7 @@ def login_user(request):
             'valid': True,
             'token': token.key
         }
-        return Response(data, status=status.HTTP_201_CREATED)
+        return Response(data)
     else:
         # Bad login details were provided. So we can't log the user in.
         data = { 'valid': False }
@@ -56,4 +56,4 @@ def register_user(request):
     token = Token.objects.create(user=new_user)
     # Return the token to the client
     data = { 'token': token.key }
-    return Response(data)
+    return Response(data, status=status.HTTP_201_CREATED)
