@@ -1,0 +1,90 @@
+[
+    {
+        "model": "passportapi.trip_note",
+        "pk": 1,
+        "fields": {
+            "trip_note": "Schedule taxi pickup from airport to Airbnb",
+            "trip": 1
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Pack reef safe sunscreen.  It's more expensive to buy down there.",
+            "trip": 1
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Schedule beginner skiing lessons",
+            "trip": 4
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Reserve boards and boots for ski days",
+            "trip": 4
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Ask Michelle what her flight number is and what time she lands",
+            "trip": 4
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Pay Sam for Airbnb, $150/night",
+            "trip": 4
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Buy a passport cover",
+            "trip": 7
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Check to see if there are any travel warnings or vaccines required",
+            "trip": 7
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Let bank know that I'll be traveling out of country",
+            "trip": 7
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Mom and dad haven't booked flights yet",
+            "trip": 7
+        }
+    },
+    {
+        "model": "passportapi.trip_note",
+        "pk": 2,
+        "fields": {
+            "trip_note": "Wedding is in the afternoon.  Need to pick a dress that won't be too hot.",
+            "trip": 7
+        }
+    }
+]
