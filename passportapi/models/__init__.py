@@ -1,5 +1,5 @@
+from .category import Category
 from .itinerary_category import ItineraryCategory
-from .itinerary_purpose import ItineraryPurpose
 from .itinerary import Itinerary
 from .packing_list import PackingList
 from .reason import Reason

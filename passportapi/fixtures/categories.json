@@ -1,0 +1,80 @@
+[
+    {
+        "model": "passportapi.category",
+        "pk": 1,
+        "fields": {
+            "category": "Food/Drinks"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 2,
+        "fields": {
+            "category": "Culture"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 3,
+        "fields": {
+            "category": "Sightseeing"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 4,
+        "fields": {
+            "category": "Family/Friend Visit"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 5,
+        "fields": {
+            "category": "History"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 6,
+        "fields": {
+            "category": "Adventure"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 7,
+        "fields": {
+            "category": "Travel/Transportation"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 8,
+        "fields": {
+            "category": "Milestone/Celebration"
+        }
+    }, 
+    {
+        "model": "passportapi.category",
+        "pk": 9,
+        "fields": {
+            "category": "Relaxation"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 10,
+        "fields": {
+            "category": "Night Out"
+        }
+    },
+    {
+        "model": "passportapi.category",
+        "pk": 11,
+        "fields": {
+            "category": "Exploring"
+        }
+    }
+
+]
