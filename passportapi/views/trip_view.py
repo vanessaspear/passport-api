@@ -46,15 +46,47 @@ class TripView(ViewSet):
 
         # Many to many relationship
         reasons_selected = request.data['reasons']
-
-        for reason in reasons_selected:
-            new_trip_reason = TripReason()
-            new_trip_reason.trip = new_trip #   <--- this is an object instance of a trip
-            new_trip_reason.reason = Reason.objects.get(pk = reason)#   <--- this is an object instance of a category
-            new_trip_reason.save()
+        try:
+            for reason in reasons_selected:
+                new_trip_reason = TripReason()
+                new_trip_reason.trip = new_trip #   <--- this is an object instance of a trip
+                new_trip_reason.reason = Reason.objects.get(pk = reason)#   <--- this is an object instance of a category
+                new_trip_reason.save()
+        except Reason.DoesNotExist:
+            return Response({'message': 'You sent an invalid reason'}, status=status.HTTP_404_NOT_FOUND)
 
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     
+    def update(self, request, pk=None):
+        """Handle PUT requests to update a trip
+
+        Returns:
+            Response -- JSON serialized dictionary representation of the updated trip
+        """
+        trip = Trip.objects.get(pk=pk)
+        serializer = CreateTripSerializer(trip, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        # Many to many relationship
+        reasons_selected = request.data['reasons']
+
+        # Remove all trip reason relationships for this trip
+        current_relationships = TripReason.objects.filter(trip__id=pk)
+        current_relationships.delete()
+
+        # Define relationships between the trip and reasons for the trip
+        try:
+            for reason in reasons_selected:
+                new_trip_reason = TripReason()
+                new_trip_reason.trip = trip
+                new_trip_reason.reason = Reason.objects.get(pk=reason)
+                new_trip_reason.save()
+        except Reason.DoesNotExist:
+            return Response({'message': 'You sent an invalid reason'}, status=status.HTTP_404_NOT_FOUND)
+       
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
     def destroy(self, request, pk=None):
         """Handle DELETE requests to destroy a trip
 
@@ -67,7 +99,7 @@ class TripView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         except Trip.DoesNotExist:
             return Response({'message': 'You sent an invalid trip'}, status=status.HTTP_404_NOT_FOUND)
-
+    
 class TripReasonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reason
