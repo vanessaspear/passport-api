@@ -3,11 +3,108 @@
         "model": "passportapi.trip",
         "pk": 1,
         "fields": {
-            "name": "Christmas Vacation",
-            "city": "Melbourne",
+            "name": "Spring Break Trip",
+            "city": "Key West",
             "state_or_country": "Florida",
-            "departure_date": "2021-12-16",
-            "return_date": "2022-01-02"
+            "departure_date": "2018-3-16",
+            "return_date": "2018-03-18",
+            "user": 1
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 2,
+        "fields": {
+            "name": "Holiday Trip to NYC",
+            "city": "New York",
+            "state_or_country": "New York",
+            "departure_date": "2016-12-20",
+            "return_date": "2016-12-27",
+            "user": 2
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 3,
+        "fields": {
+            "name": "West Coast Road Trip",
+            "city": "Los Angeles",
+            "state_or_country": "California",
+            "departure_date": "2021-06-01",
+            "return_date": "2021-06-14",
+            "user": 3
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 4,
+        "fields": {
+            "name": "Ski Trip to Colorado",
+            "city": "Vail",
+            "state_or_country": "Colorado",
+            "departure_date": "2023-03-27",
+            "return_date": "2023-03-31",
+            "user": 1
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 5,
+        "fields": {
+            "name": "Jones Family Reunion",
+            "city": "Milwaukee",
+            "state_or_country": "Wisconsin",
+            "departure_date": "2023-08-04",
+            "return_date": "2023-08-09",
+            "user": 2
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 6,
+        "fields": {
+            "name": "Disney World Vacation",
+            "city": "Orlando",
+            "state_or_country": "Florida",
+            "departure_date": "2023-04-28",
+            "return_date": "2023-05-02",
+            "user": 3
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 7,
+        "fields": {
+            "name": "Paris Adventure",
+            "city": "Paris",
+            "state_or_country": "France",
+            "departure_date": "2023-08-04",
+            "return_date": "2023-08-10",
+            "user": 1
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 8,
+        "fields": {
+            "name": "Mexican Getaway",
+            "city": "Cancun",
+            "state_or_country": "Mexico",
+            "departure_date": "2023-05-20",
+            "return_date": "2023-05-26",
+            "user": 2
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 9,
+        "fields": {
+            "name": "Japanese Exploration",
+            "city": "Tokyo",
+            "state_or_country": "Japan",
+            "departure_date": "2023-09-10",
+            "return_date": "2023-09-18",
+            "user": 3
         }
     }
 ]
