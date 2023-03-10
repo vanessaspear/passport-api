@@ -1,34 +1,34 @@
 [
     {
-        "model": "passportapi.travel_reason",
+        "model": "passportapi.travelreason",
         "pk": 1,
         "fields": {
             "travel_reason": "Vacation"
         }
     },
     {
-        "model": "passportapi.travel_reason",
+        "model": "passportapi.travelreason",
         "pk": 2,
         "fields": {
             "travel_reason": "Family/Friend Visit"
         }
     },
     {
-        "model": "passportapi.travel_reason",
+        "model": "passportapi.travelreason",
         "pk": 3,
         "fields": {
             "travel_reason": "Milestone"
         }
     },
     {
-        "model": "passportapi.travel_reason",
+        "model": "passportapi.travelreason",
         "pk": 4,
         "fields": {
             "travel_reason": "Holiday"
         }
     },
     {
-        "model": "passportapi.travel_reason",
+        "model": "passportapi.travelreason",
         "pk": 5,
         "fields": {
             "travel_reason": "Business"

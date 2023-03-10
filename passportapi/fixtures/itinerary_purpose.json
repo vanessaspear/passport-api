@@ -1,6 +1,6 @@
 [
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 1,
         "fields": {
             "itinerary_category": 1,
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 2,
         "fields": {
             "itinerary_category": 9,
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 3,
         "fields": {
             "itinerary_category": 1,
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 4,
         "fields": {
             "itinerary_category": 1,
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 5,
         "fields": {
             "itinerary_category": 3,
@@ -40,7 +40,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 6,
         "fields": {
             "itinerary_category": 5,
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 7,
         "fields": {
             "itinerary_category": 1,
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 8,
         "fields": {
             "itinerary_category": 9,
@@ -64,7 +64,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 9,
         "fields": {
             "itinerary_category": 9,
@@ -72,7 +72,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 10,
         "fields": {
             "itinerary_category": 1,
@@ -80,7 +80,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 11,
         "fields": {
             "itinerary_category": 1,
@@ -88,7 +88,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 12,
         "fields": {
             "itinerary_category": 3,
@@ -96,7 +96,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 13,
         "fields": {
             "itinerary_category": 1,
@@ -104,7 +104,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 14,
         "fields": {
             "itinerary_category": 6,
@@ -112,7 +112,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 15,
         "fields": {
             "itinerary_category": 1,
@@ -120,7 +120,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 16,
         "fields": {
             "itinerary_category": 1,
@@ -128,7 +128,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 17,
         "fields": {
             "itinerary_category": 1,
@@ -136,7 +136,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 18,
         "fields": {
             "itinerary_category": 6,
@@ -144,7 +144,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 19,
         "fields": {
             "itinerary_category": 1,
@@ -152,7 +152,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 20,
         "fields": {
             "itinerary_category": 1,
@@ -160,7 +160,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 21,
         "fields": {
             "itinerary_category": 6,
@@ -168,7 +168,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 22,
         "fields": {
             "itinerary_category": 1,
@@ -176,7 +176,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 23,
         "fields": {
             "itinerary_category": 6,
@@ -184,7 +184,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 24,
         "fields": {
             "itinerary_category": 9,
@@ -192,7 +192,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 25,
         "fields": {
             "itinerary_category": 1,
@@ -200,15 +200,15 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 26,
         "fields": {
-            "itinerary_category": 25,
-            "itinerary": 6
+            "itinerary_category": 6,
+            "itinerary": 25
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 27,
         "fields": {
             "itinerary_category": 1,
@@ -216,7 +216,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 28,
         "fields": {
             "itinerary_category": 6,
@@ -224,7 +224,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 29,
         "fields": {
             "itinerary_category": 1,
@@ -232,7 +232,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 30,
         "fields": {
             "itinerary_category": 1,
@@ -240,7 +240,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 31,
         "fields": {
             "itinerary_category": 6,
@@ -248,7 +248,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 32,
         "fields": {
             "itinerary_category": 1,
@@ -256,7 +256,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 33,
         "fields": {
             "itinerary_category": 9,
@@ -264,7 +264,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 34,
         "fields": {
             "itinerary_category": 7,
@@ -272,7 +272,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 35,
         "fields": {
             "itinerary_category": 7,
@@ -280,7 +280,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 36,
         "fields": {
             "itinerary_category": 3,
@@ -288,7 +288,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 37,
         "fields": {
             "itinerary_category": 1,
@@ -296,7 +296,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 38,
         "fields": {
             "itinerary_category": 3,
@@ -304,7 +304,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 39,
         "fields": {
             "itinerary_category": 5,
@@ -312,7 +312,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 40,
         "fields": {
             "itinerary_category": 3,
@@ -320,7 +320,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 41,
         "fields": {
             "itinerary_category": 9,
@@ -328,7 +328,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 42,
         "fields": {
             "itinerary_category": 3,
@@ -336,7 +336,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 43,
         "fields": {
             "itinerary_category": 1,
@@ -344,7 +344,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 44,
         "fields": {
             "itinerary_category": 3,
@@ -352,7 +352,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 45,
         "fields": {
             "itinerary_category": 5,
@@ -360,7 +360,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 46,
         "fields": {
             "itinerary_category": 6,
@@ -368,7 +368,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 47,
         "fields": {
             "itinerary_category": 2,
@@ -376,7 +376,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 48,
         "fields": {
             "itinerary_category": 8,
@@ -384,7 +384,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 49,
         "fields": {
             "itinerary_category": 3,
@@ -392,7 +392,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 50,
         "fields": {
             "itinerary_category": 5,
@@ -400,7 +400,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 51,
         "fields": {
             "itinerary_category": 11,
@@ -408,7 +408,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 52,
         "fields": {
             "itinerary_category": 1,
@@ -416,7 +416,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 53,
         "fields": {
             "itinerary_category": 10,
@@ -424,7 +424,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 54,
         "fields": {
             "itinerary_category": 11,
@@ -432,7 +432,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 55,
         "fields": {
             "itinerary_category": 1,
@@ -440,7 +440,7 @@
         }
     },
     {
-        "model": "passportapi.itinerary_purpose",
+        "model": "passportapi.itinerarypurpose",
         "pk": 56,
         "fields": {
             "itinerary_category": 7,
