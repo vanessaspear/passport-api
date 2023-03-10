@@ -3,78 +3,448 @@
         "model": "passportapi.itinerarycategory",
         "pk": 1,
         "fields": {
-            "itinerary_category": "Food/Drinks"
+            "category": 1,
+            "itinerary": 1
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 2,
         "fields": {
-            "itinerary_category": "Culture"
+            "category": 9,
+            "itinerary": 2
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 3,
         "fields": {
-            "itinerary_category": "Sightseeing"
+            "category": 1,
+            "itinerary": 3
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 4,
         "fields": {
-            "itinerary_category": "Family/Friend Visit"
+            "category": 1,
+            "itinerary": 4
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 5,
         "fields": {
-            "itinerary_category": "History"
+            "category": 3,
+            "itinerary": 5
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 6,
         "fields": {
-            "itinerary_category": "Adventure"
+            "category": 5,
+            "itinerary": 5
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 7,
         "fields": {
-            "itinerary_category": "Travel/Transportation"
+            "category": 1,
+            "itinerary": 6
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 8,
         "fields": {
-            "itinerary_category": "Milestone/Celebration"
+            "category": 9,
+            "itinerary": 7
         }
-    }, 
+    },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 9,
         "fields": {
-            "itinerary_category": "Relaxation"
+            "category": 9,
+            "itinerary": 8
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 10,
         "fields": {
-            "itinerary_category": "Night Out"
+            "category": 1,
+            "itinerary": 9
         }
     },
     {
         "model": "passportapi.itinerarycategory",
         "pk": 11,
         "fields": {
-            "itinerary_category": "Exploring"
+            "category": 1,
+            "itinerary": 10
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 12,
+        "fields": {
+            "category": 3,
+            "itinerary": 11
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 13,
+        "fields": {
+            "category": 1,
+            "itinerary": 12
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 14,
+        "fields": {
+            "category": 6,
+            "itinerary": 13
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 15,
+        "fields": {
+            "category": 1,
+            "itinerary": 14
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 16,
+        "fields": {
+            "category": 1,
+            "itinerary": 15
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 17,
+        "fields": {
+            "category": 1,
+            "itinerary": 16
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 18,
+        "fields": {
+            "category": 6,
+            "itinerary": 17
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 19,
+        "fields": {
+            "category": 1,
+            "itinerary": 18
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 20,
+        "fields": {
+            "category": 1,
+            "itinerary": 19
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 21,
+        "fields": {
+            "category": 6,
+            "itinerary": 20 
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 22,
+        "fields": {
+            "category": 1,
+            "itinerary": 21
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 23,
+        "fields": {
+            "category": 6,
+            "itinerary": 22
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 24,
+        "fields": {
+            "category": 9,
+            "itinerary": 23
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 25,
+        "fields": {
+            "category": 1,
+            "itinerary": 24
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 26,
+        "fields": {
+            "category": 6,
+            "itinerary": 25
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 27,
+        "fields": {
+            "category": 1,
+            "itinerary": 26
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 28,
+        "fields": {
+            "category": 6,
+            "itinerary": 27
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 29,
+        "fields": {
+            "category": 1,
+            "itinerary": 28
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 30,
+        "fields": {
+            "category": 1,
+            "itinerary": 29
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 31,
+        "fields": {
+            "category": 6,
+            "itinerary": 30
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 32,
+        "fields": {
+            "category": 1,
+            "itinerary": 31
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 33,
+        "fields": {
+            "category": 9,
+            "itinerary": 32
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 34,
+        "fields": {
+            "category": 7,
+            "itinerary": 33
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 35,
+        "fields": {
+            "category": 7,
+            "itinerary": 34
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 36,
+        "fields": {
+            "category": 3,
+            "itinerary": 35
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 37,
+        "fields": {
+            "category": 1,
+            "itinerary": 35
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 38,
+        "fields": {
+            "category": 3,
+            "itinerary": 36
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 39,
+        "fields": {
+            "category": 5,
+            "itinerary": 36
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 40,
+        "fields": {
+            "category": 3,
+            "itinerary": 37
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 41,
+        "fields": {
+            "category": 9,
+            "itinerary": 37
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 42,
+        "fields": {
+            "category": 3,
+            "itinerary": 38
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 43,
+        "fields": {
+            "category": 1,
+            "itinerary": 38
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 44,
+        "fields": {
+            "category": 3,
+            "itinerary": 39
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 45,
+        "fields": {
+            "category": 5,
+            "itinerary": 39
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 46,
+        "fields": {
+            "category": 6,
+            "itinerary": 40
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 47,
+        "fields": {
+            "category": 2,
+            "itinerary": 40
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 48,
+        "fields": {
+            "category": 8,
+            "itinerary": 44
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 49,
+        "fields": {
+            "category": 3,
+            "itinerary": 45
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 50,
+        "fields": {
+            "category": 5,
+            "itinerary": 45
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 51,
+        "fields": {
+            "category": 11,
+            "itinerary": 46
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 52,
+        "fields": {
+            "category": 1,
+            "itinerary": 46
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 53,
+        "fields": {
+            "category": 10,
+            "itinerary": 47
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 54,
+        "fields": {
+            "category": 11,
+            "itinerary": 47
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 55,
+        "fields": {
+            "category": 1,
+            "itinerary": 47
+        }
+    },
+    {
+        "model": "passportapi.itinerarycategory",
+        "pk": 56,
+        "fields": {
+            "category": 7,
+            "itinerary": 48
         }
     }
-
 ]

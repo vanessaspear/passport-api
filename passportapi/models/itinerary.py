@@ -10,4 +10,4 @@ class Itinerary(models.Model):
     city = models.CharField(max_length=50)
     state_or_country = models.CharField(max_length=50)
     trip = models.ForeignKey("Trip", on_delete=models.CASCADE, related_name='trip_itineraries')
-    itinerary_purposes = models.ManyToManyField("ItineraryCategory", through="ItineraryPurpose")
+    categories = models.ManyToManyField("Category", through="ItineraryCategory")

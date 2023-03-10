@@ -2,4 +2,5 @@ from django.db import models
 
 class ItineraryCategory(models.Model):
     
-    itinerary_category = models.CharField(max_length=50)
+    itinerary = models.ForeignKey("Itinerary", on_delete=models.CASCADE, related_name='itinerary')
+    category = models.ForeignKey("Category", on_delete=models.CASCADE, related_name='itinerary_categories')
