@@ -54,6 +54,19 @@ class TripView(ViewSet):
             new_trip_reason.save()
 
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests to destroy a trip
+
+        Returns:
+            Response: None with 204 status code
+        """
+        try:
+            trip = Trip.objects.get(pk=pk)
+            trip.delete()
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+        except Trip.DoesNotExist:
+            return Response({'message': 'You sent an invalid trip'}, status=status.HTTP_404_NOT_FOUND)
 
 class TripReasonSerializer(serializers.ModelSerializer):
     class Meta:
