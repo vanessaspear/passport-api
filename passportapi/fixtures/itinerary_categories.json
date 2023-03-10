@@ -1,76 +1,76 @@
 [
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 1,
         "fields": {
             "itinerary_category": "Food/Drinks"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 2,
         "fields": {
             "itinerary_category": "Culture"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 3,
         "fields": {
             "itinerary_category": "Sightseeing"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 4,
         "fields": {
             "itinerary_category": "Family/Friend Visit"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 5,
         "fields": {
             "itinerary_category": "History"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 6,
         "fields": {
             "itinerary_category": "Adventure"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 7,
         "fields": {
             "itinerary_category": "Travel/Transportation"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 8,
         "fields": {
             "itinerary_category": "Milestone/Celebration"
         }
     }, 
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 9,
         "fields": {
             "itinerary_category": "Relaxation"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 10,
         "fields": {
             "itinerary_category": "Night Out"
         }
     },
     {
-        "model": "passportapi.itinerary_category",
+        "model": "passportapi.itinerarycategory",
         "pk": 11,
         "fields": {
             "itinerary_category": "Exploring"
