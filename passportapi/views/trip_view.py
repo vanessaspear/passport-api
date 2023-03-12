@@ -75,7 +75,7 @@ class TripView(ViewSet):
         current_relationships = TripReason.objects.filter(trip__id=pk)
         current_relationships.delete()
 
-        # Re-define relationships between the trip and reasons for the trip
+        # Define relationships between the trip and reasons for the trip
         try:
             for reason in reasons_selected:
                 new_trip_reason = TripReason()
