@@ -19,11 +19,10 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework import routers
-from passportapi.views import register_user, login_user, TripView, ItineraryView
+from passportapi.views import register_user, login_user, TripView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'trips', TripView, 'trip')
-router.register(r'itineraries', ItineraryView, 'itinerary')
 
 urlpatterns = [
     path('', include(router.urls)),
