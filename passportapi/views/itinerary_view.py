@@ -4,8 +4,8 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from django.contrib.auth.models import User
-from passportapi.models import Itinerary, Category, ItineraryCategory
-from passportapi.views import TripSerializer
+from passportapi.models import Itinerary, Category, ItineraryCategory, Trip
+from passportapi.views import TripSerializer, UserTripSerializer
 
 
 class ItineraryView(ViewSet):
@@ -41,9 +41,9 @@ class ItineraryView(ViewSet):
             Response -- JSON serialized dictionary representation of the new itinerary
         """
         serializer = CreateItinerarySerializer(data=request.data)
+        trip = Trip.objects.get(pk=request.data['trip'])
         serializer.is_valid(raise_exception=True)
-        user=request.auth.user
-        new_itinerary = serializer.save(user=user)
+        new_itinerary = serializer.save(trip=trip)
 
         # Many to many relationship
         categories_selected = request.data['categories']
@@ -100,16 +100,6 @@ class ItineraryView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         except Itinerary.DoesNotExist:
             return Response({'message': 'You sent an invalid itinerary'}, status=status.HTTP_404_NOT_FOUND)
-    
-class ItineraryCategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = ('id', 'category')
-
-class TripItinerarySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TripSerializer
-        fields = ('id', 'name',"first_name", "last_name")
 
 class CreateItinerarySerializer(serializers.ModelSerializer):
     """JSON serializer for itineraries
@@ -117,7 +107,7 @@ class CreateItinerarySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Itinerary
-        fields = ('id', 'name', 'itinerary_description', 'date', 'start_time', 'end_time', 'city', 'state_or_country', 'trip_id')
+        fields = ('id', 'name', 'itinerary_description', 'date', 'start_time', 'end_time', 'city', 'state_or_country', 'trip')
         depth = 1
 
 class ItinerarySerializer(serializers.ModelSerializer):
@@ -126,5 +116,5 @@ class ItinerarySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Itinerary
-        fields = ('id', 'name', 'itinerary_description', 'date', 'start_time', 'end_time', 'city', 'state_or_country', 'trip_id', 'categories')
+        fields = ('id', 'name', 'itinerary_description', 'date', 'start_time', 'end_time', 'city', 'state_or_country', 'trip', 'categories')
         depth = 1
