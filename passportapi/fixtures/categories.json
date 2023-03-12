@@ -3,7 +3,7 @@
         "model": "passportapi.category",
         "pk": 1,
         "fields": {
-            "category": "Food/Drinks"
+            "category": "Food / Drinks"
         }
     },
     {

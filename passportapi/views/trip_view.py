@@ -99,11 +99,6 @@ class TripView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         except Trip.DoesNotExist:
             return Response({'message': 'You sent an invalid trip'}, status=status.HTTP_404_NOT_FOUND)
-    
-class TripReasonSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Reason
-        fields = ('id', 'reason')
 
 class UserTripSerializer(serializers.ModelSerializer):
     class Meta:
@@ -123,7 +118,6 @@ class TripSerializer(serializers.ModelSerializer):
     """JSON serializer for trips
     """
     user = UserTripSerializer(many=False)
-    reasons = TripReasonSerializer(many=True)
 
     class Meta:
         model = Trip
