@@ -3,6 +3,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
+from rest_framework.decorators import action
 from django.contrib.auth.models import User
 from passportapi.models import Itinerary, Category, ItineraryCategory, Trip
 from passportapi.views import TripSerializer, UserTripSerializer
@@ -31,6 +32,10 @@ class ItineraryView(ViewSet):
             Response -- JSON serialized list of itineraries
         """
         itineraries = Itinerary.objects.all()
+
+        if "trip_id" in request.query_params:
+            itineraries = itineraries.filter(trip=request.query_params['trip_id'])
+
         serializer = ItinerarySerializer(itineraries, many=True)
         return Response(serializer.data)
     
@@ -100,6 +105,24 @@ class ItineraryView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         except Itinerary.DoesNotExist:
             return Response({'message': 'You sent an invalid itinerary'}, status=status.HTTP_404_NOT_FOUND)
+    
+    @action(methods=['get'], detail=False)
+    def categories(self, request):
+        """
+        @api {GET} /itineraries/categories GET available itinerary categories
+        """
+
+        if request.method == 'GET':
+            categories = Category.objects.all()
+
+            serializer = CategorySerializer(
+                categories, many=True, context={'request': request})
+            return Response(serializer.data)
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ('id', "category")
 
 class CreateItinerarySerializer(serializers.ModelSerializer):
     """JSON serializer for itineraries
