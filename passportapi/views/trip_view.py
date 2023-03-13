@@ -3,6 +3,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
+from rest_framework.decorators import action
 from django.contrib.auth.models import User
 from passportapi.models import Trip, Reason, TripReason
 
@@ -30,6 +31,10 @@ class TripView(ViewSet):
             Response -- JSON serialized list of trips
         """
         trips = Trip.objects.all()
+
+        if "user_id" in request.query_params:
+            trips = trips.filter(user=request.query_params['user_id'])
+
         serializer = TripSerializer(trips, many=True)
         return Response(serializer.data)
     
@@ -99,6 +104,24 @@ class TripView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         except Trip.DoesNotExist:
             return Response({'message': 'You sent an invalid trip'}, status=status.HTTP_404_NOT_FOUND)
+        
+    @action(methods=['get'], detail=False)
+    def reasons(self, request):
+
+        if request.method == 'GET':
+            """
+            @api {GET} /trips/tripreasons GET trip reasons
+            """
+            reasons = Reason.objects.all()
+
+            serializer = ReasonSerializer(
+                reasons, many=True, context={'request': request})
+            return Response(serializer.data)
+        
+class ReasonSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reason
+        fields = ('id', "reason")
 
 class UserTripSerializer(serializers.ModelSerializer):
     class Meta:
