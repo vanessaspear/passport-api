@@ -107,11 +107,11 @@ class TripView(ViewSet):
         
     @action(methods=['get'], detail=False)
     def reasons(self, request):
+        """
+        @api {GET} /trips/reasons GET avialable trip reasons
+        """
 
         if request.method == 'GET':
-            """
-            @api {GET} /trips/tripreasons GET trip reasons
-            """
             reasons = Reason.objects.all()
 
             serializer = ReasonSerializer(
