@@ -31,6 +31,10 @@ class ItineraryView(ViewSet):
             Response -- JSON serialized list of itineraries
         """
         itineraries = Itinerary.objects.all()
+
+        if "trip_id" in request.query_params:
+            itineraries = itineraries.filter(trip=request.query_params['trip_id'])
+
         serializer = ItinerarySerializer(itineraries, many=True)
         return Response(serializer.data)
     
