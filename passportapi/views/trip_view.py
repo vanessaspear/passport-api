@@ -30,6 +30,10 @@ class TripView(ViewSet):
             Response -- JSON serialized list of trips
         """
         trips = Trip.objects.all()
+
+        if "user_id" in request.query_params:
+            trips = trips.filter(user=request.query_params['user_id'])
+
         serializer = TripSerializer(trips, many=True)
         return Response(serializer.data)
     
