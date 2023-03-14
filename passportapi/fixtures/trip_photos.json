@@ -4,8 +4,7 @@
         "pk": 1,
         "fields": {
             "image": "key_west_florida.jpg",
-            "trip": 1,
-            "user": 1
+            "trip": 1
         }
     }
 ]

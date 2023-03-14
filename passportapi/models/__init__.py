@@ -8,4 +8,4 @@ from .trip import Trip
 from .trip_note import TripNote
 from .trip_photo import TripPhoto
 from .itinerary_photo import ItineraryPhoto
-from .site_photo import SitePhoto
+from .trip_photo import TripPhoto
