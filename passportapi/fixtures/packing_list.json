@@ -1,0 +1,90 @@
+[
+    {
+        "model": "passportapi.packinglist",
+        "pk": 1,
+        "fields": {
+            "trip": 1,
+            "item": "Formal dress"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 2,
+        "fields": {
+            "trip": 1,
+            "item": "2x bathing suits"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 3,
+        "fields": {
+            "trip": 4,
+            "item": "Snow jacket"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 4,
+        "fields": {
+            "trip": 4,
+            "item": "Snow goggles"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 5,
+        "fields": {
+            "trip": 4,
+            "item": "Snow pants"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 6,
+        "fields": {
+            "trip": 4,
+            "item": "Snow boots"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 7,
+        "fields": {
+            "trip": 7,
+            "item": "Polaroid camera"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 8,
+        "fields": {
+            "trip": 7,
+            "item": "Dress for wedding"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 9,
+        "fields": {
+            "trip": 7,
+            "item": "toothpaste"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 10,
+        "fields": {
+            "trip": 7,
+            "item": "toothbrush"
+        }
+    },
+    {
+        "model": "passportapi.packinglist",
+        "pk": 11,
+        "fields": {
+            "trip": 7,
+            "item": "Diamond earrings"
+        }
+    }
+]
