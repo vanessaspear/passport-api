@@ -3,7 +3,6 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from rest_framework.decorators import action
 from passportapi.models import Trip, TripNote
 
 
@@ -24,10 +23,10 @@ class TripNoteView(ViewSet):
             return Response({'message:': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
-        """Handle GET requests to get all trips
+        """Handle GET requests to get all trip notes
 
         Returns:
-            Response -- JSON serialized list of trips
+            Response -- JSON serialized list of trip notes
         """
         trip_notes = TripNote.objects.all()
 
