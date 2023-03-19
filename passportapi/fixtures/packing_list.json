@@ -4,7 +4,8 @@
         "pk": 1,
         "fields": {
             "trip": 1,
-            "item": "Formal dress"
+            "item": "Formal dress",
+            "packed": false
         }
     },
     {
@@ -12,7 +13,8 @@
         "pk": 2,
         "fields": {
             "trip": 1,
-            "item": "2x bathing suits"
+            "item": "2x bathing suits",
+            "packed": false
         }
     },
     {
@@ -20,7 +22,8 @@
         "pk": 3,
         "fields": {
             "trip": 4,
-            "item": "Snow jacket"
+            "item": "Snow jacket",
+            "packed": false
         }
     },
     {
@@ -28,7 +31,8 @@
         "pk": 4,
         "fields": {
             "trip": 4,
-            "item": "Snow goggles"
+            "item": "Snow goggles",
+            "packed": false
         }
     },
     {
@@ -36,7 +40,8 @@
         "pk": 5,
         "fields": {
             "trip": 4,
-            "item": "Snow pants"
+            "item": "Snow pants",
+            "packed": false
         }
     },
     {
@@ -44,7 +49,8 @@
         "pk": 6,
         "fields": {
             "trip": 4,
-            "item": "Snow boots"
+            "item": "Snow boots",
+            "packed": false
         }
     },
     {
@@ -52,7 +58,8 @@
         "pk": 7,
         "fields": {
             "trip": 7,
-            "item": "Polaroid camera"
+            "item": "Polaroid camera",
+            "packed": false
         }
     },
     {
@@ -60,7 +67,8 @@
         "pk": 8,
         "fields": {
             "trip": 7,
-            "item": "Dress for wedding"
+            "item": "Dress for wedding",
+            "packed": false
         }
     },
     {
@@ -68,7 +76,8 @@
         "pk": 9,
         "fields": {
             "trip": 7,
-            "item": "toothpaste"
+            "item": "toothpaste",
+            "packed": false
         }
     },
     {
@@ -76,7 +85,8 @@
         "pk": 10,
         "fields": {
             "trip": 7,
-            "item": "toothbrush"
+            "item": "toothbrush",
+            "packed": false
         }
     },
     {
@@ -84,7 +94,8 @@
         "pk": 11,
         "fields": {
             "trip": 7,
-            "item": "Diamond earrings"
+            "item": "Diamond earrings",
+            "packed": false
         }
     }
 ]

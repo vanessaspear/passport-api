@@ -80,5 +80,5 @@ class PackingListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PackingList
-        fields = ('id', 'trip', 'item',)
+        fields = ('id', 'trip', 'item', 'packed')
         depth = 1
