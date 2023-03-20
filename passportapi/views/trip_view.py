@@ -6,6 +6,7 @@ from rest_framework import serializers, status
 from rest_framework.decorators import action
 from django.contrib.auth.models import User
 from passportapi.models import Trip, Reason, TripReason
+from datetime import date
 
 
 class TripView(ViewSet):
@@ -108,7 +109,7 @@ class TripView(ViewSet):
     @action(methods=['get'], detail=False)
     def reasons(self, request):
         """
-        @api {GET} /trips/reasons GET avialable trip reasons
+        @api {GET} /trips/reasons GET available trip reasons
         """
 
         if request.method == 'GET':
@@ -117,6 +118,17 @@ class TripView(ViewSet):
             serializer = ReasonSerializer(
                 reasons, many=True, context={'request': request})
             return Response(serializer.data)
+        
+    @action(methods=['get'], detail=False)
+    def upcoming(self, request):
+        """Determines the number of upcoming trips for the user
+        @api {GET} /trips/upcoming GET upcoming trip count
+        """
+        user=request.auth.user
+        upcoming_trips = Trip.objects.filter(
+            user=user, departure_date__gt=date.today())
+        return Response(upcoming_trips.count(), status=status.HTTP_200_OK)
+    
         
 class ReasonSerializer(serializers.ModelSerializer):
     class Meta:
