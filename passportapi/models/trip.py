@@ -10,3 +10,6 @@ class Trip(models.Model):
     return_date = models.DateField(auto_now=False, auto_now_add=False)
     reasons = models.ManyToManyField("Reason", through="TripReason")
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='planned_trips')
+
+    class Meta:
+        ordering = ( '-departure_date', )
