@@ -129,6 +129,17 @@ class TripView(ViewSet):
             user=user, departure_date__gt=date.today())
         return Response(upcoming_trips.count(), status=status.HTTP_200_OK)
     
+    @action(methods=['get'], detail=False)
+    def past(self, request):
+        """Determines the number of past trips for the user
+        @api {GET} /trips/past GET past trip count
+        """
+        user=request.auth.user
+        past_trips = Trip.objects.filter(
+            user=user, departure_date__lte=date.today())
+        serializer = TripSerializer(past_trips, many=True)
+        return Response(serializer.data)
+    
         
 class ReasonSerializer(serializers.ModelSerializer):
     class Meta:
@@ -146,7 +157,8 @@ class CreateTripSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Trip
-        fields = ('id', 'name', 'city', 'state_or_country', 'departure_date', 'return_date',)
+        fields = ('id', 'name', 'city', 'state_or_country', 'departure_date', 
+                  'return_date', 'latitude', 'longitude')
         depth = 1
 
 class TripSerializer(serializers.ModelSerializer):
@@ -156,5 +168,7 @@ class TripSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Trip
-        fields = ('id', 'name', 'city', 'state_or_country', 'departure_date', 'return_date', 'user', 'reasons')
+        fields = ('id', 'name', 'city', 'state_or_country', 
+                  'departure_date', 'return_date', 'user', 'reasons', 
+                  'latitude', 'longitude')
         depth = 1
