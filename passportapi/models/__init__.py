@@ -9,3 +9,4 @@ from .trip_note import TripNote
 from .trip_photo import TripPhoto
 from .itinerary_photo import ItineraryPhoto
 from .trip_photo import TripPhoto
+from .type import Type

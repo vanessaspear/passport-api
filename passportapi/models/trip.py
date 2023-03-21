@@ -12,6 +12,7 @@ class Trip(models.Model):
     latitude = models.FloatField()
     reasons = models.ManyToManyField("Reason", through="TripReason")
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='planned_trips')
+    public = models.BooleanField(default=False)
 
     class Meta:
         ordering = ( '-departure_date', )
