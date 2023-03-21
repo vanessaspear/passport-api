@@ -146,7 +146,8 @@ class CreateTripSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Trip
-        fields = ('id', 'name', 'city', 'state_or_country', 'departure_date', 'return_date',)
+        fields = ('id', 'name', 'city', 'state_or_country', 'departure_date', 
+                  'return_date', 'latitude', 'longitude')
         depth = 1
 
 class TripSerializer(serializers.ModelSerializer):
@@ -156,5 +157,7 @@ class TripSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Trip
-        fields = ('id', 'name', 'city', 'state_or_country', 'departure_date', 'return_date', 'user', 'reasons')
+        fields = ('id', 'name', 'city', 'state_or_country', 
+                  'departure_date', 'return_date', 'user', 'reasons', 
+                  'latitude', 'longitude')
         depth = 1
