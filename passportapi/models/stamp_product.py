@@ -9,4 +9,6 @@ class StampProduct(models.Model):
     type = models.ForeignKey("Type", on_delete=models.DO_NOTHING, related_name='stamp_product_type')
     date_created = models.DateTimeField(auto_now_add=True)
     public = models.BooleanField(default=False)
-    
+
+    class Meta:
+        ordering = ( '-date_created', )

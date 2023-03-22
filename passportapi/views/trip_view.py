@@ -33,8 +33,9 @@ class TripView(ViewSet):
         """
         trips = Trip.objects.all()
 
-        if "user_id" in request.query_params:
-            trips = trips.filter(user=request.query_params['user_id'])
+        filtering = request.query_params.get("filter_by", None)
+        if filtering is not None and filtering == "user":
+            trips = trips.filter(user=request.auth.user)
 
         serializer = TripSerializer(trips, many=True)
         return Response(serializer.data)
