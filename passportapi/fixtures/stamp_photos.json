@@ -1,0 +1,132 @@
+[
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 1,
+        "fields": {
+            "image": "photos/IMG_4169.jpeg",
+            "description": "Took a run through the park and discovered a Buddhist deity",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-20 13:15:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 2,
+        "fields": {
+            "image": "photos/IMG_4171.jpeg",
+            "description": "TJ loves the view from Aiyi's apartment",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-21 09:15:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 3,
+        "fields": {
+            "image": "photos/IMG_4173.jpeg",
+            "description": "Meeting Waipua (great-grandma) for the first time!",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-21 13:15:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 4,
+        "fields": {
+            "image": "photos/IMG_4175.jpeg",
+            "description": "Exploring the night markets with the fam",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-23 18:45:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 5,
+        "fields": {
+            "image": "photos/IMG_4168.jpeg",
+            "description": "All dressed up in traditional Chinese attire for Andy + Katherine's wedding",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-25 12:15:00-05:00",
+            "public": true
+        }
+    },   
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 6,
+        "fields": {
+            "image": "photos/IMG_4172.jpeg",
+            "description": "Our little dude <3",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-25 15:15:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 7,
+        "fields": {
+            "image": "photos/IMG_4170.jpeg",
+            "description": "Wow! This was so cool.  Everyone should visit the Taroko National Park Suspension Bridge!",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-27 10:45:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 8,
+        "fields": {
+            "image": "photos/IMG_4176.jpeg",
+            "description": "This guy's not afraid of heights!",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-27 11:15:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 9,
+        "fields": {
+            "image": "photos/IMG_4174.jpeg",
+            "description": "Hiking day along the Taiwan coastline!",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-28 16:00-05:00",
+            "public": true
+        }
+    },
+    {
+        "model": "passportapi.stampphoto",
+        "pk": 10,
+        "fields": {
+            "image": "photos/IMG_4177.jpeg",
+            "description": "Goodbye, Taiwan! Thanks for the memories.",
+            "trip": 13,
+            "itinerary": null,
+            "type": 1,
+            "date_created": "2022-12-30 08:00-05:00",
+            "public": true
+        }
+    }
+]

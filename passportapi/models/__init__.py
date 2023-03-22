@@ -6,9 +6,7 @@ from .reason import Reason
 from .trip_reason import TripReason
 from .trip import Trip
 from .trip_note import TripNote
-from .trip_photo import TripPhoto
 from .itinerary_photo import ItineraryPhoto
-from .trip_photo import TripPhoto
 from .type import Type
 from .stamp_journal import StampJournal
 from .stamp_photo import StampPhoto
