@@ -27,7 +27,6 @@ def login_user(request):
         data = {
             'valid': True,
             'token': token.key,
-            'id': authenticated_user.id,
             'first_name': authenticated_user.first_name,
         }
         return Response(data)
@@ -64,8 +63,7 @@ def register_user(request):
         token = Token.objects.create(user=new_user)
         # Return the token to the client
         # This is where we update what gets sent back to the client for localStorage
-        data = { 
-            'id': new_user.id,
+        data = {
             'first_name': new_user.first_name,
             'token': token.key 
         }

@@ -22,7 +22,7 @@ class StampView(ViewSet):
         serializer = TypeSerializer(types, many=True)
         return Response(serializer.data)
     
-    @action(methods=['post'], detail=False)
+    @action(methods=['post', 'get'], detail=False)
     def photos(self, request):
         """Post a new stamp photo
         @api {POST} /stamps/photos POST stamp photo
@@ -54,6 +54,19 @@ class StampView(ViewSet):
             serializer = PhotoSerializer(
                 stamp_photo, many=False, context={'request': request})
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+        elif request.method == "GET":
+            """Gets all stamp photos
+            @api {GET} /stamps/photos GET stamp photos
+            """
+
+            photos = StampPhoto.objects.all()
+            
+            filtering = request.query_params.get("filter_by", None)
+            if filtering is not None and filtering == "user":
+                photos = photos.filter(trip__user=request.auth.user)
+            
+            serializer = PhotoSerializer(photos, many=True)
+            return Response(serializer.data)
         
         return Response(None, status=status.HTTP_405_METHOD_NOT_ALLOWED)
         
