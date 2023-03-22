@@ -10,3 +10,6 @@ from .trip_photo import TripPhoto
 from .itinerary_photo import ItineraryPhoto
 from .trip_photo import TripPhoto
 from .type import Type
+from .stamp_journal import StampJournal
+from .stamp_photo import StampPhoto
+from .stamp_product import StampProduct
