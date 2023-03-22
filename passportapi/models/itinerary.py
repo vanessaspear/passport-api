@@ -11,3 +11,4 @@ class Itinerary(models.Model):
     state_or_country = models.CharField(max_length=50)
     trip = models.ForeignKey("Trip", on_delete=models.CASCADE, related_name='trip_itineraries')
     categories = models.ManyToManyField("Category", through="ItineraryCategory")
+    public = models.BooleanField(default=False)

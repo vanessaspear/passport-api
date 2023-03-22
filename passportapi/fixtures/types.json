@@ -1,0 +1,23 @@
+[
+    {
+        "model": "passportapi.type",
+        "pk": 1,
+        "fields": {
+            "type": "Photo"
+        }
+    },
+    {
+        "model": "passportapi.type",
+        "pk": 2,
+        "fields": {
+            "type": "Journal"
+        }
+    },
+    {
+        "model": "passportapi.type",
+        "pk": 3,
+        "fields": {
+            "type": "Product"
+        }
+    }
+]
