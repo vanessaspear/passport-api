@@ -124,5 +124,61 @@
             "latitude": 35.6762,
             "user": 3
         }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 10,
+        "fields": {
+            "name": "Breck Snowboarding Trip",
+            "city": "Breckenridge",
+            "state_or_country": "Colorado",
+            "departure_date": "2019-2-22",
+            "return_date": "2019-02-26",
+            "longitude": -106.0384,
+            "latitude": 39.4817,
+            "user": 1
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 11,
+        "fields": {
+            "name": "1st Anniversary Trip",
+            "city": "Wailea",
+            "state_or_country": "Maui, Hawaii",
+            "departure_date": "2021-3-19",
+            "return_date": "2021-03-25",
+            "longitude": -156.4392,
+            "latitude": 20.6872,
+            "user": 1
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 12,
+        "fields": {
+            "name": "Mom's 60th Birthday Weekend",
+            "city": "Cleveland",
+            "state_or_country": "Ohio",
+            "departure_date": "2022-07-16",
+            "return_date": "2022-07-20",
+            "longitude": -81.6944,
+            "latitude": 41.4993,
+            "user": 1
+        }
+    },
+    {
+        "model": "passportapi.trip",
+        "pk": 13,
+        "fields": {
+            "name": "Christmas in Taiwan",
+            "city": "Taipei",
+            "state_or_country": "Taiwan",
+            "departure_date": "2022-12-19",
+            "return_date": "2022-12-30",
+            "longitude": 121.5654,
+            "latitude": 25.0330,
+            "user": 1
+        }
     }
 ]
