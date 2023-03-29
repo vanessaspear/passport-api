@@ -7,7 +7,7 @@ from rest_framework.decorators import action
 import uuid
 import base64
 from django.core.files.base import ContentFile
-from passportapi.models import Type, Trip, Itinerary, StampPhoto
+from passportapi.models import Type, Trip, Itinerary, StampPhoto, StampJournal, StampProduct
 
 
 class StampView(ViewSet):
@@ -69,6 +69,95 @@ class StampView(ViewSet):
             return Response(serializer.data)
         
         return Response(None, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+    
+    @action(methods=['post', 'get'], detail=False)
+    def journals(self, request):
+        """Post a new stamp journal
+        @api {POST} /stamps/journals POST stamp journal
+        """
+        
+        if request.method == "POST":
+            stamp_journal = StampJournal()
+            stamp_journal.name = request.data['name']
+            stamp_journal.entry = request.data['entry']
+            stamp_journal.public = request.data['public']
+            
+            trip = Trip.objects.get(pk=request.data['trip'])
+            stamp_journal.trip = trip
+            
+            stamp_type = Type.objects.get(pk=request.data['type'])
+            stamp_journal.type = stamp_type
+            
+            try:
+                itinerary = Itinerary.objects.get(pk=request.data['itinerary'])
+            except Itinerary.DoesNotExist:
+                itinerary = request.data['itinerary']
+            stamp_journal.itinerary = itinerary
+            
+            stamp_journal.save()
+            serializer = JournalSerializer(
+                stamp_journal, many=False, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        elif request.method == "GET":
+            """Gets all stamp journals
+            @api {GET} /stamps/journals GET stamp journals
+            """
+
+            journals = StampJournal.objects.all()
+            
+            filtering = request.query_params.get("filter_by", None)
+            if filtering is not None and filtering == "user":
+                journals = journals.filter(trip__user=request.auth.user)
+            
+            serializer = JournalSerializer(journals, many=True)
+            return Response(serializer.data)
+        
+        return Response(None, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+    
+    @action(methods=['post', 'get'], detail=False)
+    def products(self, request):
+        """Post a new stamp product
+        @api {POST} /stamps/products POST stamp product
+        """
+        
+        if request.method == "POST":
+            stamp_product = StampProduct()
+            stamp_product.name = request.data['name']
+            stamp_product.description = request.data['description']
+            stamp_product.link = request.data['link']
+            stamp_product.public = request.data['public']
+            
+            trip = Trip.objects.get(pk=request.data['trip'])
+            stamp_product.trip = trip
+            
+            stamp_type = Type.objects.get(pk=request.data['type'])
+            stamp_product.type = stamp_type
+            
+            try:
+                itinerary = Itinerary.objects.get(pk=request.data['itinerary'])
+            except Itinerary.DoesNotExist:
+                itinerary = request.data['itinerary']
+            stamp_product.itinerary = itinerary
+            
+            stamp_product.save()
+            serializer = ProductSerializer(
+                stamp_product, many=False, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        elif request.method == "GET":
+            """Gets all stamp products
+            @api {GET} /stamps/products GET stamp products
+            """
+
+            products = StampProduct.objects.all()
+            
+            filtering = request.query_params.get("filter_by", None)
+            if filtering is not None and filtering == "user":
+                products = products.filter(trip__user=request.auth.user)
+            
+            serializer = ProductSerializer(products, many=True)
+            return Response(serializer.data)
+        
+        return Response(None, status=status.HTTP_405_METHOD_NOT_ALLOWED)
         
 class TypeSerializer(serializers.ModelSerializer):
     """JSON serializer for stamp types
@@ -85,3 +174,22 @@ class PhotoSerializer(serializers.ModelSerializer):
     class Meta:
         model = StampPhoto
         fields = ('id', 'image', 'description', 'public', 'trip', 'itinerary', 'type', 'date_created' )
+        depth = 1
+
+class JournalSerializer(serializers.ModelSerializer):
+    """JSON serializer for stamp journals
+    """
+
+    class Meta:
+        model = StampJournal
+        fields = ('id', 'name', 'entry', 'public', 'trip', 'itinerary', 'type', 'date_created' )
+        depth = 1
+
+class ProductSerializer(serializers.ModelSerializer):
+    """JSON serializer for stamp products
+    """
+
+    class Meta:
+        model = StampProduct
+        fields = ('id', 'name', 'description', "link", 'public', 'trip', 'itinerary', 'type', 'date_created' )
+        depth = 1
